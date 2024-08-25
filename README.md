@@ -59,6 +59,15 @@ Orderly stores your base directory and course prefixes in a configuration file. 
 - Windows: `%APPDATA%\Orderly\course_config.yaml`
 - Linux/macOS: `~/.config/Orderly/course_config.yaml`
 
+## Screenshot
+
+windows:
+<img src="win.png" alt="orderly" width="100%" height="450">
+
+Linux:
+<img src="linux.png" alt="orderly" width="100%" height="450">
+
+
 ## Contributing
 
 Feel free to submit pull requests or open issues to help improve Orderly!

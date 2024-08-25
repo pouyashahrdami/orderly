@@ -84,18 +84,20 @@ def show_welcome_message():
         # Add rows to the table
         table.add_row([f"{FG_BLUE}Programmer : Pouya Shahrdami! 😊{RESET}"])
         table.add_row([f"{FG_CYAN}-------------------------------------------{RESET}"])
-        table.add_row(["Here's what you can do:"])
-        table.add_row([f"1. {FG_YELLOW}Set up a base directory for your course folders.{RESET}"])
-        table.add_row([f"2. {FG_YELLOW}Create and organize folders based on course prefixes.{RESET}"])
-        table.add_row([f"3. {FG_YELLOW}Move folders to their designated locations.{RESET}"])
+        table.add_row(["Available options:"])
+        table.add_row([f"1. {FG_YELLOW}Set up/edit course configuration (creates {CONFIG_FILE}){RESET}"])
+        table.add_row([f"2. {FG_YELLOW}Organize files based on existing configuration{RESET}"])
+        table.add_row([f"3. {FG_YELLOW}Edit configuration file directly{RESET}"])
+        table.add_row([f"4. {FG_YELLOW}Reset configuration (delete {CONFIG_FILE}){RESET}"])
         table.add_row([f"{FG_CYAN}-------------------------------------------{RESET}"])
-        table.add_row([f"{FG_MAGENTA}Use the command-line options to customize the behavior:{RESET}"])
-        table.add_row([f"{FG_WHITE}--change{RESET}   Change the default directory for folder creation"])
-        table.add_row([f"{FG_WHITE}--reset{RESET}    Delete the existing configuration file"])
+        table.add_row([f"{FG_MAGENTA}Command-line options:{RESET}"])
+        table.add_row([f"{FG_WHITE}--edit{RESET}   Edit the configuration file"])
+        table.add_row([f"{FG_WHITE}--reset{RESET}    Delete the existing configuration file"])
+        table.add_row([f"{FG_WHITE}--src <directory>{RESET}   Specify a source directory to organize"])
         table.add_row([f"{FG_BLUE}-------------------------------------------{RESET}"])
         table.add_row([f"{FG_WHITE}GitHub: https://github.com/pouyashahrdami{RESET}"])
         table.add_row([f"{FG_BLUE}LinkedIn{FG_WHITE}: https://www.linkedin.com/in/pouya-shahrdami-9aa42b303/{RESET}"])
-        
+
         print(table)
     except Exception as e:
         print(e)
